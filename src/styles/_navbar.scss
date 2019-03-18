@@ -1,0 +1,72 @@
+@import 'config';
+.Navigation {
+    max-width: 970px;
+    height: 200px;
+    margin: auto;
+}
+nav {
+    position: fixed;
+    top: 18px;
+    height: 100vh; 
+    width: 100vw;
+    padding: 0;
+    margin:  0 auto;
+    z-index: 200;
+    pointer-events: none;
+   
+    .vertical { 
+        display: none;
+        list-style-type: none;
+        padding: 15px 30px;
+        height: inherit;
+        width: inherit;
+        background-color: #65413A;
+         pointer-events: all;
+        li {
+            margin: 30px 0;
+            font-size: 1em;
+            font-weight: 600;
+            line-height: 20px;
+            a {
+                text-decoration: none;
+                color:white;
+            }
+        }
+       
+    }
+   .horizontal {
+       position: relative;
+       top: 1.5em; 
+       list-style-type: none;
+       float: right;
+       pointer-events: all;
+
+       li {
+           float: left;
+            margin: 15px;
+            font-size: 1em;
+            &:last-child{
+                margin-right: 30px;
+            }
+           a {
+               color: #333;
+               text-decoration: none;
+           }
+       }
+   }
+   .show-horizontal {
+       background: #65413A;
+       height: 60px;
+       border-radius: 0 0 0 50%;
+       li {
+           a {
+            color: white;
+           }
+        
+       }
+   }
+}
+
+#open {
+    display: block;
+}

@@ -1,0 +1,49 @@
+@include mediaXl {
+
+}
+
+//Desktops and laptops
+@include mediaLg {
+    
+}
+
+//Tablets amd small laptops
+@include mediaMd {
+.wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 0.7fr));
+    grid-template-rows: repeat(3, 160px);
+    padding: 1em;
+
+    .item1,
+    .item2,
+    .item3, .item4 {
+        grid-column: 1 / 20;
+    }
+
+}
+
+}
+
+//Smartphones 
+@include mediaSm {
+     .wrapper { 
+        padding: 0;
+          .item1, .item2, .item3, .item4 {
+              grid-column: 1 / 40; 
+          }
+           
+         
+     }
+
+     .contact form {
+         grid-template-columns: 1fr;
+
+         .textarea {
+             grid-column: 1;
+         }
+         .btn-div {
+             grid-column: 1;
+         }
+     }
+
+}  

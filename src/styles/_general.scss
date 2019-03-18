@@ -1,0 +1,448 @@
+@import 'config';
+
+.Container {
+    position: absolute;
+    top: 10px;
+    width: 100vw;
+    padding: 200px 0 0 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: $box-shadow;
+    line-height: 1;
+    text-align: center;
+    background: $whitey;
+//Home Page CSS
+    .title {
+        font-family: 'Parisienne', cursive;
+        text-align: center;
+
+        h2 {
+            font-size: 3.5em;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-bottom: 2rem;
+        }
+
+        hr.hr {
+            border: none;
+            height: 1px;
+            background-image: linear-gradient(to right, #f0f0f0, #8f8f8f, #f0f0f0);
+        }
+
+        hr.hr::after {
+            content: '§';
+            display: inline-block;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(60deg);
+            transform-origin: 50% 50%;
+            padding: 1rem;
+            background-color: white;
+        }
+
+    }
+
+    .wrapper {
+        position: relative;
+        margin: auto;
+        top: -50px;
+        max-width: 100%;
+        display: grid;
+        grid-gap: 5px;
+        padding:  4rem 6rem;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 0.7fr));
+        grid-template-rows: repeat(2, 280px);
+        justify-content: center;
+        align-content: center;
+
+        .a {
+            -ms-transform: rotate(20deg);
+            -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+        }
+
+        .e {
+            clip-path: polygon(
+                0 0,
+                100% 0,
+                100% 100%,
+                0 70%
+            )
+        }
+       
+        .h {
+            -ms-transform: rotate(20deg);
+            -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+        } 
+        .i {
+            -ms-transform: rotate(20deg);
+            -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+        }
+        .j {
+            -ms-transform: skewY(-6deg);
+            -webkit-transform: skewY(-6deg);
+            transform: skewY(-6deg);
+        }
+    }
+
+    .box {
+        color: $whitey;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 100%; 
+        animation-name: reveal;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        transition: all ease-in-out 1s;
+        img {
+            width: 100%;
+            height: 100%;
+            border: 1px solid gainsboro; 
+            border-radius: 4px;
+            padding: 5px;
+             box-shadow: $box-shadow; 
+        }
+    }
+    @keyframes reveal {
+        0%{margin-top: 600px; opacity: 0}
+        100%{margin-top: 0px; opacity: 1}
+    }
+    .item1 {
+        grid-column: 1 / 3;
+        max-width: 100%;
+        display: grid;
+        grid-gap: 5px;
+        padding: 0.5rem;
+        grid-template-columns: repeat(2, minmax(50px, 0.7fr));
+        grid-template-rows: repeat(2, 135px);
+        justify-content: center;
+        align-content: center;
+    }
+
+    .item2 {
+        grid-column: 3 / 5;
+    }
+      .item3 {
+          grid-column: 1 / 3;
+          grid-row: 2 / 3;
+      }
+    .item4 {
+        grid-column: 3 / 5;
+        max-width: 100%;
+        display: grid;
+        grid-gap: 5px;
+        padding: 0.5rem;
+        grid-template-columns: repeat(2, minmax(50px, 0.7fr));
+        grid-template-rows: repeat(2, 135px);
+        justify-content: center;
+        align-content: center;
+    }
+//About Section CSS
+    .about {
+        position: relative;
+        margin: auto;
+        top: -100px;
+        max-width: 100%;
+        display: grid;
+        grid-gap: 20px;
+        padding: 4rem 6rem;
+        grid-template-columns: repeat(2, 1fr);
+        line-height: 2;
+        text-align: left; 
+
+        .vl {
+            border-right: 2px solid $primary-color;
+            padding-right: 1rem;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: 1fr 9fr;
+            margin-bottom: 20px;
+            span.drop-cap:first-letter {
+    font-size: 3em;
+    float: left;
+    margin-top: .12em;
+}
+
+.material-icons {
+    color: chocolate;
+    font-size: 1.2em;
+}
+        }
+    }
+
+}
+
+.header-image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 40px;
+    max-width: 970px;
+    height: 320px;
+    z-index: 1;
+    overflow: hidden;
+
+    .chocolate {
+        position: absolute;
+        top: -16.3%;
+        left: -6.7%;
+        z-index: 1;
+    }
+    
+}
+//Contact Page CSS
+.contact {
+    position: relative;
+    width: 100%;
+    top: 40px;
+    padding: 0 4em 4em 4em;
+
+ 
+
+    .contact-details {
+        width: 100%;
+        line-height: 1.5;
+        text-align: left;
+       padding: 0 1.5em;
+
+       h2 {
+           margin-bottom: -10px;
+       }
+    }
+    form {
+        top: 20px;
+        position: relative;
+        display: grid;
+        grid-gap: 2em;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        div {
+            position: relative;
+            margin-bottom: 1em;
+        }
+        input {
+            width: 90%;
+            height: 40px;
+        }
+
+        label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding-left: 1.3em;
+            transition: all 200ms;
+            opacity: 0.5;
+        }
+        .textarea {
+            grid-column: 1/ span 2;
+            textarea {
+                width: 95%;
+                height: 10em;
+                font-size: 1.3em;
+            }
+        }
+        input, textarea {
+            padding: 1em 0 0 .3em;
+            border: none;
+            border-bottom: solid 0.1em $primary-color;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, $primary-color 4%);
+            &:focus {
+                box-shadow: none;
+                outline: none;
+                border-bottom: 0.5em solid chocolate;
+            }
+        }
+        .btn-div {
+            grid-column: 1/ span 2;
+            text-align: left;
+            padding-left: 1.3em;
+            margin-top: -20px;
+            margin-bottom: 100px;
+            button {
+                color: white;
+                cursor: pointer;
+                border: none;
+                border-radius: 3px;
+                width: 50%;
+                height: 40px;
+                background-color: $primary-color;
+                box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+
+                &:hover {
+                    transform: translateY(-2px);
+                    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+        
+
+        input:focus + label, textarea:focus + label, input:valid + label {
+            transform: translate3d(0, -100%, 0);
+            opacity: 1;
+            font-size: 120%;
+        }
+    }
+   
+}
+
+
+//Footer CSS
+
+ .Footer {
+     width: 100%;
+     height: 70px;
+     position: absolute;
+     color: red;
+     bottom: 10px;
+
+     i {
+         padding: 10px;
+         text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.6);
+         transition: all ease-in-out 150ms;
+         &:hover {
+             margin-top: -1px;
+             text-shadow: 0px 7px rgba(0, 0, 0, 0.4)
+         }
+     }
+     a:nth-child(1){
+        color: #205ccc;
+     }
+     a:nth-child(2){
+        color: #dd4b39;
+     }
+     a:nth-child(3){
+        color:#4867AA;
+        ;
+     }
+     a:nth-child(4){
+        color: rgb(223, 190, 6);
+     }
+ }
+//Gallery Page CSS
+.slider {
+    position: relative;
+    top: 50px; 
+    max-width: 600px;
+    margin: 0 auto;
+    height: 550px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 5em;
+}
+
+.slider-wrapper {
+    position: relative;
+    height: 80%;
+    width: 100%;
+    animation-name: slide-bottom;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes slide-bottom {
+    from{opacity: 0; margin-bottom: 500px;}
+    to {opacity: 1; margin-bottom: 0;}
+}
+.slide {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    box-shadow: $box-shadow;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.arrow {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: $secondary-color;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform ease-in .1s;
+    box-shadow: $box-shadow;
+}
+
+.nextArrow {
+    position: absolute;
+    top: 40%;
+    right: 5px;
+    z-index: 5;
+    color: $whitey;
+}
+
+.backArrow {
+    position: absolute;
+    top:40%;
+    left: 5px;
+    z-index: 5;
+    color: $whitey;
+}
+
+.fa-arrow-right:before,
+.fa-arrow-left:before {
+    color: #333;
+}
+//Press Page CSS
+.content {
+    position: relative;
+    top: 80px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+
+    .timeline-item {
+        padding: 3em 2em 2em;
+        position: relative;
+        color: black;
+        border-left: 2px solid $border-color;
+
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+         p {
+            font-size: 1rem; 
+        }
+        &::before {
+            content: attr(nameIs);
+            position: absolute;
+            left: 2em;
+            font-weight: bold;
+            top: 1em;
+            display: block;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        &::after {
+            width: 20px;
+            height: 20px;
+            display: block;
+            top: 1em;
+            position: absolute;
+            left: -7px;
+            border-radius: 10px;
+            content: '';
+            border: 2px solid $border-color;
+            background: $primary-color;
+        }
+        &:last-child {
+            border-image: linear-gradient(to bottom, $border-color 60%, rgba($border-color, 0)) 1 100%;
+            margin-bottom: 10em;
+        }
+    }
+}
+ 
