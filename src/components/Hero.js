@@ -8,8 +8,8 @@ import {
 } from 'react-router-dom';
 const Hero = () => {
 const style = {
-  borderBottom: '3px solid #0EB3CE',
-  borderTop: '3px solid #0EB3CE'
+  borderBottom: '3px solid #CBD9D6',
+  borderTop: '3px solid #CBD9D6'
 };
 return (
         <MediaQuery>
@@ -21,7 +21,7 @@ return (
                           <header>
                         <div style={{width: windowWidth>970 && '970px', height: 'inherit', position: 'relative', margin: 'auto'}}>
                          <img src={logo} className='logo' alt='logo' style={{display: windowWidth<=970 && 'none'}}/>
-                        <p style={{paddingLeft: windowWidth<970 && '1em',}}>Bee's Treats</p>
+                        <p style={{paddingLeft: windowWidth<970 && '1em',}}>You-Jay's Treats</p>
                         <div onClick={toggle} className={'hamburger-icon '+ (on && 'close')} id={'' + (windowWidth >970 && 'hide')}>
                         <div className='btn-line line-1'></div>
                         <div className='btn-line line-2'></div>

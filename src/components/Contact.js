@@ -50,9 +50,9 @@ class Contact extends Component {
                    <div className='contact' style={{top: windowWidth<=698 && '-80px', padding: windowWidth <698 && '0 1em'}}>
                    <div className='contact-details'>
                    <h2>Contact Us </h2>
-                   <p>No. 12 Green Street, Behind Navy Quarters <br />
-                   Kubwa Phase II, Site, Abuja<br/>
-                   <i className = 'fa fa-phone'></i>+2349059564447, +2349099779460</p >
+                   <p>219 Gado Nasko Road, Beside First Bank Nigeria<br />
+                   Kubwa Phase II, Site II, Abuja<br/>
+                   <i className = 'fa fa-phone'></i>+2347064450412, +2347016383819</p >
                    </div>
                     <form onSubmit={this.handleSubmit}>
                     <div>

@@ -12,7 +12,7 @@
 .wrapper {
     grid-template-columns: repeat(auto-fit, minmax(50px, 0.7fr));
     grid-template-rows: repeat(3, 160px);
-    padding: 1em;
+    padding: 2em 1em;
 
     .item1,
     .item2,

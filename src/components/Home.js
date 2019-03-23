@@ -18,8 +18,8 @@ const Home = () => (
         {({windowWidth}) =>
                    <div className='Container' style={{width: windowWidth>970 && '970px'}}>
             <div className='title' style={{marginTop: windowWidth<698 && '-100px'}}>
-            <h2>Bee's Treats</h2>
-            <p>We speak standard</p>
+            <h2>You-Jay's Treats</h2>
+            <p>Bliss in every bite</p>
             <hr className="hr" />
             </div>
             <div className="wrapper">
